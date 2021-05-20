@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .header{
+            height: 70px;
+            width: 100%;
+            background-color: grey;
+            position: fixed;
+        }
+
+        /* .parent{
+                height: 600px;
+                width: 500px;
+                border: 5px solid black;
+                margin: 30px;
+                position: relative;
+        }
+
+        .one{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+
+        .two{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            /* position: fixed; */
+            /* top:0px; */
+            /* left: 0px; */
+        /* } */
+        /* .three{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            /* margin-top: -50px; */
+        /* }  */ 
+
+        .section1{
+            height: 500px;
+            width: 100%;
+            background-color: lightgray;
+            font-size: 100px;
+            margin-top: 70px;
+            display: inline-block;
+        }
+        .section2{
+            /* height: 500px; */
+            padding: 50px 0 ;
+            width: 100%;
+            background-color: beige;
+            font-size: 100px;
+        }
+        .service{
+            height: 400px;
+            width: 300px;
+            background-color: grey;
+            margin-left: 100px;
+            position: relative;
+        }
+        .service-img{
+            height: 400px;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+            z-index: 5;
+        }
+        .service-img>img{
+            width: 100%;
+            height: 100%;
+        }
+        .service-details{
+            z-index: 9;
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.562);
+        }
+        .service:hover .service-details{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="parent">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div> -->
+    <div class="header"></div>
+    <div class="section1">i am gonna hide</div>
+    <div class="section2">
+        <div class="service">
+            <div class="service-img">
+                <img src="thor.jpg" alt="#">
+            </div>
+            <div class="service-details">
+                <h4>Thor</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
